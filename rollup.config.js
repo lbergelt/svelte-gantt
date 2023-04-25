@@ -12,7 +12,7 @@ export default {
     input: 'src/index.ts',
     output: {
         sourcemap: true,
-        format: 'es',
+        format: 'iife',
         name: 'window',
         extend: true,
         dir: 'dist'

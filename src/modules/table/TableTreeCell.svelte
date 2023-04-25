@@ -4,7 +4,7 @@
     import { createEventDispatcher } from "svelte";
 
     export let row: SvelteRow;
-    
+
     const dispatch = createEventDispatcher();
 
     function onExpandToggle() {
@@ -20,9 +20,9 @@
     {#if row.children}
         <div class="sg-tree-expander" on:click="{onExpandToggle}">
             {#if row.expanded}
-            <i class="fas fa-angle-down"></i>
+            <i class="bi bi-caret-down-fill"></i>
             {:else}
-            <i class="fas fa-angle-right"></i>
+            <i class="bi bi-caret-right-fill"></i>
             {/if}
         </div>
     {/if}
